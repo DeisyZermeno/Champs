@@ -1,0 +1,133 @@
+body{
+    background: linear-gradient( rgb(129, 134, 105) 0px, rgb(68, 70, 58)400px) ;
+    margin: 30px;
+}
+
+/*Ocupa toda la lina horiontal disponible */
+
+.block{
+    display: block;
+    background-color: rgb(82, 81, 79);
+    margin: 100px 0;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+/*Solo ocupa el espacio necesario para su contenido y se coloca al lado de los elementos de la misma linea.*/
+
+
+.inline{
+    display: inline;
+    background-color: cornflowerblue;
+    padding: 30px;   /*Espacio interno del contenido del elemento y el borde su área*/
+}
+
+/* Detalles para botones*/
+
+.button {
+    background-color: black;
+    padding: 20px 20px; /* Interlineado interno*/
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+    border: 20px powderblue; /* borde o grosor*/
+    color: black;
+    text-decoration: none; /*elimina los subrayados que tienen los enlaces*/
+    transition: 0.3s;  /*tomaran tres segundos en verse las transiciones*/
+    border-radius: 20px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 300px;
+    height: 500PX;
+    overflow: hidden; /*borra lo que sobra*/
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.button:hover{
+    background: radial-gradient(circle, rgb(200, 202, 184),  rgb(96, 99, 77) );
+    transform: scale(1.05); /* Agrandar un poco */ 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+
+}
+.button:hover .nombres {
+    color: rgb(22, 22, 14);
+}
+
+.button:hover .texto {
+    opacity: 1;
+    color: rgb(22, 22, 14);  /* Cambia el color del texto cuando se pasa el mouse sobre el botón */
+  }
+
+.button:hover .texto2 {
+    opacity: 1;
+    color: rgb(39, 29, 19); /* Cambia el color del texto cuando se pasa el mouse sobre el botón */
+  }
+  
+  .button:hover p{
+    opacity: 1;
+    color: rgb(22, 22, 14);  /* Cambia el color del texto cuando se pasa el mouse sobre el botón */
+  }
+  .button:hover h2{
+    opacity: 1;
+    color: rgb(22, 22, 14);  /* Cambia el color del texto cuando se pasa el mouse sobre el botón */
+  }
+
+  .button:hover img{
+    display: none;
+  }
+
+img{
+    height: 90% ;
+    width: auto;
+    /*clip-path: inset(0px 90px 0px 90px);*/
+    object-position: center;
+    border-radius: 15px;
+    mask-image: linear-gradient(black , rgba(255, 255, 255, 0));
+    
+}
+h1{
+    font-size: 90px;
+    color: rgb(59, 44, 32);
+    font-family: "Quintessential", serif;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    color: rgb(223, 230, 186);
+    font-family: "Eagle Lake", serif;
+    text-align: center;
+}
+
+p{  
+    color: rgb(223, 230, 186);
+    text-align: center;
+    margin: 20px;
+}
+
+.nombres{
+    font-family: "Quintessential", serif;
+    font-size: 30px;
+}
+
+
+.texto{
+    opacity: 0;
+    font-family: "Quintessential", serif;
+    font-size: 30px;
+    transition: opacity 0.3s ease;  /* Agregar una transición suave */
+}
+
+
+.texto2{
+    opacity: 0;
+    font-family: "Eagle Lake", serif;
+    font-size: 14px;
+    text-align:justify;
+    transition: opacity 0.3s ease;  /* Agregar una transición suave */
+}
+
